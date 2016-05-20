@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027A4E171CEE2FDC0030BA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E161CEE2FDC0030BA0B /* AppDelegate.swift */; };
+		027A4E191CEE2FDC0030BA0B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E181CEE2FDC0030BA0B /* TimerViewController.swift */; };
+		027A4E1E1CEE2FDC0030BA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */; };
+		027A4E201CEE2FDC0030BA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */; };
+		027A4E231CEE2FDC0030BA0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */; };
+		027A4E2E1CEE2FDC0030BA0B /* WovaanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E2D1CEE2FDC0030BA0B /* WovaanTests.swift */; };
+		027A4E391CEE2FDC0030BA0B /* WovaanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E381CEE2FDC0030BA0B /* WovaanUITests.swift */; };
+		027A4E491CEE8A1D0030BA0B /* PastTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E481CEE8A1D0030BA0B /* PastTimesViewController.swift */; };
+		027A4E4B1CEE8A3D0030BA0B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */; };
+		027A4E4F1CEE8DBF0030BA0B /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */; };
+		027A4E511CEE8F890030BA0B /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E501CEE8F890030BA0B /* StatsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		027A4E2A1CEE2FDC0030BA0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027A4E0B1CEE2FDC0030BA0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027A4E121CEE2FDC0030BA0B;
+			remoteInfo = Wovaan;
+		};
+		027A4E351CEE2FDC0030BA0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027A4E0B1CEE2FDC0030BA0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027A4E121CEE2FDC0030BA0B;
+			remoteInfo = Wovaan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027A4E131CEE2FDC0030BA0B /* Wovaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wovaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		027A4E161CEE2FDC0030BA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		027A4E181CEE2FDC0030BA0B /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		027A4E1D1CEE2FDC0030BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		027A4E221CEE2FDC0030BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		027A4E241CEE2FDC0030BA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027A4E291CEE2FDC0030BA0B /* WovaanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WovaanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		027A4E2D1CEE2FDC0030BA0B /* WovaanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WovaanTests.swift; sourceTree = "<group>"; };
+		027A4E2F1CEE2FDC0030BA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027A4E341CEE2FDC0030BA0B /* WovaanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WovaanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		027A4E381CEE2FDC0030BA0B /* WovaanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WovaanUITests.swift; sourceTree = "<group>"; };
+		027A4E3A1CEE2FDC0030BA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027A4E481CEE8A1D0030BA0B /* PastTimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastTimesViewController.swift; sourceTree = "<group>"; };
+		027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		027A4E501CEE8F890030BA0B /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027A4E101CEE2FDC0030BA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E261CEE2FDC0030BA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E311CEE2FDC0030BA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027A4E0A1CEE2FDC0030BA0B = {
+			isa = PBXGroup;
+			children = (
+				027A4E151CEE2FDC0030BA0B /* Wovaan */,
+				027A4E2C1CEE2FDC0030BA0B /* WovaanTests */,
+				027A4E371CEE2FDC0030BA0B /* WovaanUITests */,
+				027A4E141CEE2FDC0030BA0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		027A4E141CEE2FDC0030BA0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				027A4E131CEE2FDC0030BA0B /* Wovaan.app */,
+				027A4E291CEE2FDC0030BA0B /* WovaanTests.xctest */,
+				027A4E341CEE2FDC0030BA0B /* WovaanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		027A4E151CEE2FDC0030BA0B /* Wovaan */ = {
+			isa = PBXGroup;
+			children = (
+				027A4E161CEE2FDC0030BA0B /* AppDelegate.swift */,
+				027A4E181CEE2FDC0030BA0B /* TimerViewController.swift */,
+				027A4E481CEE8A1D0030BA0B /* PastTimesViewController.swift */,
+				027A4E501CEE8F890030BA0B /* StatsViewController.swift */,
+				027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */,
+				027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */,
+				027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */,
+				027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */,
+				027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */,
+				027A4E241CEE2FDC0030BA0B /* Info.plist */,
+			);
+			path = Wovaan;
+			sourceTree = "<group>";
+		};
+		027A4E2C1CEE2FDC0030BA0B /* WovaanTests */ = {
+			isa = PBXGroup;
+			children = (
+				027A4E2D1CEE2FDC0030BA0B /* WovaanTests.swift */,
+				027A4E2F1CEE2FDC0030BA0B /* Info.plist */,
+			);
+			path = WovaanTests;
+			sourceTree = "<group>";
+		};
+		027A4E371CEE2FDC0030BA0B /* WovaanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				027A4E381CEE2FDC0030BA0B /* WovaanUITests.swift */,
+				027A4E3A1CEE2FDC0030BA0B /* Info.plist */,
+			);
+			path = WovaanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		027A4E121CEE2FDC0030BA0B /* Wovaan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027A4E3D1CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "Wovaan" */;
+			buildPhases = (
+				027A4E0F1CEE2FDC0030BA0B /* Sources */,
+				027A4E101CEE2FDC0030BA0B /* Frameworks */,
+				027A4E111CEE2FDC0030BA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wovaan;
+			productName = Wovaan;
+			productReference = 027A4E131CEE2FDC0030BA0B /* Wovaan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		027A4E281CEE2FDC0030BA0B /* WovaanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027A4E401CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanTests" */;
+			buildPhases = (
+				027A4E251CEE2FDC0030BA0B /* Sources */,
+				027A4E261CEE2FDC0030BA0B /* Frameworks */,
+				027A4E271CEE2FDC0030BA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027A4E2B1CEE2FDC0030BA0B /* PBXTargetDependency */,
+			);
+			name = WovaanTests;
+			productName = WovaanTests;
+			productReference = 027A4E291CEE2FDC0030BA0B /* WovaanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		027A4E331CEE2FDC0030BA0B /* WovaanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027A4E431CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanUITests" */;
+			buildPhases = (
+				027A4E301CEE2FDC0030BA0B /* Sources */,
+				027A4E311CEE2FDC0030BA0B /* Frameworks */,
+				027A4E321CEE2FDC0030BA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027A4E361CEE2FDC0030BA0B /* PBXTargetDependency */,
+			);
+			name = WovaanUITests;
+			productName = WovaanUITests;
+			productReference = 027A4E341CEE2FDC0030BA0B /* WovaanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		027A4E0B1CEE2FDC0030BA0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ari Cohn";
+				TargetAttributes = {
+					027A4E121CEE2FDC0030BA0B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JAARPD28TL;
+					};
+					027A4E281CEE2FDC0030BA0B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JAARPD28TL;
+						TestTargetID = 027A4E121CEE2FDC0030BA0B;
+					};
+					027A4E331CEE2FDC0030BA0B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JAARPD28TL;
+						TestTargetID = 027A4E121CEE2FDC0030BA0B;
+					};
+				};
+			};
+			buildConfigurationList = 027A4E0E1CEE2FDC0030BA0B /* Build configuration list for PBXProject "Wovaan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 027A4E0A1CEE2FDC0030BA0B;
+			productRefGroup = 027A4E141CEE2FDC0030BA0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				027A4E121CEE2FDC0030BA0B /* Wovaan */,
+				027A4E281CEE2FDC0030BA0B /* WovaanTests */,
+				027A4E331CEE2FDC0030BA0B /* WovaanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		027A4E111CEE2FDC0030BA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A4E231CEE2FDC0030BA0B /* LaunchScreen.storyboard in Resources */,
+				027A4E201CEE2FDC0030BA0B /* Assets.xcassets in Resources */,
+				027A4E1E1CEE2FDC0030BA0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E271CEE2FDC0030BA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E321CEE2FDC0030BA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		027A4E0F1CEE2FDC0030BA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A4E4F1CEE8DBF0030BA0B /* TimeCell.swift in Sources */,
+				027A4E171CEE2FDC0030BA0B /* AppDelegate.swift in Sources */,
+				027A4E191CEE2FDC0030BA0B /* TimerViewController.swift in Sources */,
+				027A4E491CEE8A1D0030BA0B /* PastTimesViewController.swift in Sources */,
+				027A4E511CEE8F890030BA0B /* StatsViewController.swift in Sources */,
+				027A4E4B1CEE8A3D0030BA0B /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E251CEE2FDC0030BA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A4E2E1CEE2FDC0030BA0B /* WovaanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027A4E301CEE2FDC0030BA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A4E391CEE2FDC0030BA0B /* WovaanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		027A4E2B1CEE2FDC0030BA0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027A4E121CEE2FDC0030BA0B /* Wovaan */;
+			targetProxy = 027A4E2A1CEE2FDC0030BA0B /* PBXContainerItemProxy */;
+		};
+		027A4E361CEE2FDC0030BA0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027A4E121CEE2FDC0030BA0B /* Wovaan */;
+			targetProxy = 027A4E351CEE2FDC0030BA0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027A4E1D1CEE2FDC0030BA0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027A4E221CEE2FDC0030BA0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		027A4E3B1CEE2FDC0030BA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		027A4E3C1CEE2FDC0030BA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		027A4E3E1CEE2FDC0030BA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wovaan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.Wovaan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		027A4E3F1CEE2FDC0030BA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wovaan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.Wovaan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		027A4E411CEE2FDC0030BA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WovaanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.WovaanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wovaan.app/Wovaan";
+			};
+			name = Debug;
+		};
+		027A4E421CEE2FDC0030BA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WovaanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.WovaanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wovaan.app/Wovaan";
+			};
+			name = Release;
+		};
+		027A4E441CEE2FDC0030BA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WovaanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.WovaanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wovaan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		027A4E451CEE2FDC0030BA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WovaanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.WovaanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wovaan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		027A4E0E1CEE2FDC0030BA0B /* Build configuration list for PBXProject "Wovaan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027A4E3B1CEE2FDC0030BA0B /* Debug */,
+				027A4E3C1CEE2FDC0030BA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027A4E3D1CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "Wovaan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027A4E3E1CEE2FDC0030BA0B /* Debug */,
+				027A4E3F1CEE2FDC0030BA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		027A4E401CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027A4E411CEE2FDC0030BA0B /* Debug */,
+				027A4E421CEE2FDC0030BA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		027A4E431CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027A4E441CEE2FDC0030BA0B /* Debug */,
+				027A4E451CEE2FDC0030BA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 027A4E0B1CEE2FDC0030BA0B /* Project object */;
+}
