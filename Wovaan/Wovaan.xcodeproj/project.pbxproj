@@ -18,6 +18,8 @@
 		027A4E4B1CEE8A3D0030BA0B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */; };
 		027A4E4F1CEE8DBF0030BA0B /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */; };
 		027A4E511CEE8F890030BA0B /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E501CEE8F890030BA0B /* StatsViewController.swift */; };
+		027A4E551CEFABFD0030BA0B /* oslo-ii.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */; };
+		027A4E571CEFBE9A0030BA0B /* monofonto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E561CEFBE9A0030BA0B /* monofonto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		027A4E501CEE8F890030BA0B /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "oslo-ii.regular.ttf"; sourceTree = "<group>"; };
+		027A4E561CEFBE9A0030BA0B /* monofonto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = monofonto.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +115,12 @@
 				027A4E501CEE8F890030BA0B /* StatsViewController.swift */,
 				027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */,
 				027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */,
+				027A4E561CEFBE9A0030BA0B /* monofonto.ttf */,
 				027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */,
 				027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */,
 				027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */,
 				027A4E241CEE2FDC0030BA0B /* Info.plist */,
+				027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */,
 			);
 			path = Wovaan;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 				027A4E231CEE2FDC0030BA0B /* LaunchScreen.storyboard in Resources */,
 				027A4E201CEE2FDC0030BA0B /* Assets.xcassets in Resources */,
 				027A4E1E1CEE2FDC0030BA0B /* Main.storyboard in Resources */,
+				027A4E571CEFBE9A0030BA0B /* monofonto.ttf in Resources */,
+				027A4E551CEFABFD0030BA0B /* oslo-ii.regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
