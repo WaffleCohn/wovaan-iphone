@@ -15,6 +15,7 @@ class PastTimesViewController: UITableViewController
     var bestTime = 0.0
     var avgTime = 0.0
     var worstTime = 0.0
+    var numTimes = 0
     
     var defaults = NSUserDefaults.standardUserDefaults()
 
@@ -30,11 +31,13 @@ class PastTimesViewController: UITableViewController
         bestTime = defaults.doubleForKey("best")
         avgTime = defaults.doubleForKey("average")
         worstTime = defaults.doubleForKey("worst")
+        numTimes = defaults.integerForKey("numTimes")
         
     }
     
     override func viewDidAppear(animated: Bool)
     {
+        super.viewDidAppear(animated)
         
         if (defaults.objectForKey("pastTimes") != nil)
         {
@@ -44,6 +47,7 @@ class PastTimesViewController: UITableViewController
         bestTime = defaults.doubleForKey("best")
         avgTime = defaults.doubleForKey("average")
         worstTime = defaults.doubleForKey("worst")
+        numTimes = defaults.integerForKey("numTimes")
         
         tableView.reloadData()
         
@@ -107,7 +111,7 @@ class PastTimesViewController: UITableViewController
                 let cell = tableView.dequeueReusableCellWithIdentifier("record", forIndexPath: indexPath) as! RecordCell
                 
                 cell.titleLabel.text = "Best"
-                cell.titleLabel.textColor = UIColor.greenColor()
+                cell.titleLabel.textColor = UIColor(red: 0, green: 119/255, blue: 0, alpha: 1)
                 
                 cell.timeLabel.text = formatTime(bestTime)
                 
@@ -156,6 +160,77 @@ class PastTimesViewController: UITableViewController
     {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+    }
+    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
+    {
+        
+        if (indexPath.section == 1)
+        {
+            
+            let deleteAction = UITableViewRowAction(style: .Default, title: "Delete", handler: { (action: UITableViewRowAction, indexPath: NSIndexPath) in
+                
+                self.pastTimes.removeAtIndex(indexPath.row)
+
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                
+                self.defaults.setObject(self.pastTimes, forKey: "pastTimes")
+                
+                self.bestTime = self.pastTimes[0]
+                self.worstTime = self.pastTimes[0]
+                var total = 0.0
+                
+                for i in self.pastTimes
+                {
+                    
+                    if (i < self.bestTime)
+                    {
+                        self.bestTime = i
+                    }
+                    else if (i > self.worstTime)
+                    {
+                        self.worstTime = i
+                    }
+                    
+                    total += i
+                    
+                }
+                
+                self.numTimes -= 1
+                self.avgTime = total / Double(self.numTimes)
+                
+                self.defaults.setDouble(self.bestTime, forKey: "best")
+                self.defaults.setDouble(self.worstTime, forKey: "worst")
+                self.defaults.setDouble(self.avgTime, forKey: "average")
+                self.defaults.setInteger(self.numTimes, forKey: "numTimes")
+                
+                tableView.reloadData()
+                
+            })
+            
+            return [deleteAction]
+            
+        }
+        
+        return nil
+        
+    }
+    
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle
+    {
+        
+        if (indexPath.section == 0)
+        {
+            return UITableViewCellEditingStyle.None
+        }
+        
+        return UITableViewCellEditingStyle.Delete
         
     }
 

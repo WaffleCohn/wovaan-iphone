@@ -61,8 +61,23 @@ class TimerViewController: UIViewController
         bestTimeLabel.text = formatTime(bestTime)
         averageTimeLabel.text = formatTime(avgTime)
         
-        let tap = UITapGestureRecognizer(target: self, action: "tap:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(TimerViewController.tap(_:)))
         self.view.addGestureRecognizer(tap)
+        
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        bestTime = defaults.doubleForKey("best")
+        avgTime = defaults.doubleForKey("average")
+        worstTime = defaults.doubleForKey("worst")
+        if (defaults.objectForKey("pastTimes") != nil)
+        {
+            pastTimes = defaults.objectForKey("pastTimes") as! [Double]
+        }
+        numTimes = defaults.integerForKey("numTimes")
         
     }
 
@@ -91,7 +106,7 @@ class TimerViewController: UIViewController
         
         counting = true
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
         
         resetButton.hidden = true
         
@@ -106,8 +121,7 @@ class TimerViewController: UIViewController
         
         resetButton.hidden = false
         
-        pastTimes.append(count)
-        print(pastTimes)
+        pastTimes.insert(count, atIndex: 0)
         
         defaults.setObject(pastTimes, forKey: "pastTimes")
         
@@ -129,7 +143,9 @@ class TimerViewController: UIViewController
             
         }
         
-        avgTime = ((avgTime * Double(numTimes)) + count) / Double(++numTimes)
+        avgTime = ((avgTime * Double(numTimes)) + count)
+        numTimes += 1
+        avgTime /= Double(numTimes)
         
         defaults.setDouble(avgTime, forKey: "average")
         defaults.setInteger(numTimes, forKey: "numTimes")

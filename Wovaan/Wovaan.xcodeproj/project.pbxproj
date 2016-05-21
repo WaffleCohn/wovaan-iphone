@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026E4BE31CF0FA7A004C7381 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BDD1CF0FA79004C7381 /* Icon-40@2x.png */; };
+		026E4BE41CF0FA7A004C7381 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BDE1CF0FA79004C7381 /* Icon-40@3x.png */; };
+		026E4BE51CF0FA7A004C7381 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BDF1CF0FA79004C7381 /* Icon-60@2x.png */; };
+		026E4BE61CF0FA7A004C7381 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BE01CF0FA79004C7381 /* Icon-60@3x.png */; };
+		026E4BE71CF0FA7A004C7381 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BE11CF0FA7A004C7381 /* Icon-Small@2x.png */; };
+		026E4BE81CF0FA7A004C7381 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 026E4BE21CF0FA7A004C7381 /* Icon-Small@3x.png */; };
 		027A4E171CEE2FDC0030BA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E161CEE2FDC0030BA0B /* AppDelegate.swift */; };
 		027A4E191CEE2FDC0030BA0B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E181CEE2FDC0030BA0B /* TimerViewController.swift */; };
 		027A4E1E1CEE2FDC0030BA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */; };
@@ -42,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026E4BDD1CF0FA79004C7381 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		026E4BDE1CF0FA79004C7381 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		026E4BDF1CF0FA79004C7381 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		026E4BE01CF0FA79004C7381 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		026E4BE11CF0FA7A004C7381 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		026E4BE21CF0FA7A004C7381 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
 		027A4E131CEE2FDC0030BA0B /* Wovaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wovaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027A4E161CEE2FDC0030BA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027A4E181CEE2FDC0030BA0B /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026E4BDC1CF0D7F4004C7381 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
 		027A4E0A1CEE2FDC0030BA0B = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +143,13 @@
 				027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */,
 				027A4E5A1CF003D10030BA0B /* RecordCell.swift */,
 				027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */,
+				026E4BDD1CF0FA79004C7381 /* Icon-40@2x.png */,
+				026E4BDE1CF0FA79004C7381 /* Icon-40@3x.png */,
+				026E4BDF1CF0FA79004C7381 /* Icon-60@2x.png */,
+				026E4BE01CF0FA79004C7381 /* Icon-60@3x.png */,
+				026E4BE11CF0FA7A004C7381 /* Icon-Small@2x.png */,
+				026E4BE21CF0FA7A004C7381 /* Icon-Small@3x.png */,
+				026E4BDC1CF0D7F4004C7381 /* Icon */,
 				027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */,
 				027A4E241CEE2FDC0030BA0B /* Info.plist */,
 				027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */,
@@ -256,11 +282,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E4BE81CF0FA7A004C7381 /* Icon-Small@3x.png in Resources */,
 				027A4E231CEE2FDC0030BA0B /* LaunchScreen.storyboard in Resources */,
 				027A4E201CEE2FDC0030BA0B /* Assets.xcassets in Resources */,
 				027A4E1E1CEE2FDC0030BA0B /* Main.storyboard in Resources */,
+				026E4BE71CF0FA7A004C7381 /* Icon-Small@2x.png in Resources */,
+				026E4BE31CF0FA7A004C7381 /* Icon-40@2x.png in Resources */,
 				027A4E571CEFBE9A0030BA0B /* monofonto.ttf in Resources */,
+				026E4BE41CF0FA7A004C7381 /* Icon-40@3x.png in Resources */,
+				026E4BE61CF0FA7A004C7381 /* Icon-60@3x.png in Resources */,
 				027A4E551CEFABFD0030BA0B /* oslo-ii.regular.ttf in Resources */,
+				026E4BE51CF0FA7A004C7381 /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wovaan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.Wovaan;
@@ -443,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wovaan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftallmighty.Wovaan;
@@ -517,6 +551,7 @@
 				027A4E3F1CEE2FDC0030BA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027A4E401CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +560,7 @@
 				027A4E421CEE2FDC0030BA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027A4E431CEE2FDC0030BA0B /* Build configuration list for PBXNativeTarget "WovaanUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +569,7 @@
 				027A4E451CEE2FDC0030BA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

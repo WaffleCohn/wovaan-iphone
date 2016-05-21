@@ -8,8 +8,11 @@
 
 import Foundation
 
-func formatTime(var x:Double) -> String
+func formatTime(y:Double) -> String
 {
+    
+    var x:Double = y
+    
     var hrs = 0
     var min = 0
     var sec = 0
@@ -17,13 +20,13 @@ func formatTime(var x:Double) -> String
     
     if (x / 3600 >= 1)
     {
-        hrs = Int(x/3600)
+        hrs = Int(x/3600.0)
         x -= Double(hrs*3600)
     }
     
     if (x / 60 >= 1)
     {
-        min = Int(Int(x)/60)
+        min = Int(x/60.0)
         x -= Double(min*60)
     }
     
@@ -42,4 +45,5 @@ func formatTime(var x:Double) -> String
     }
     
     return String(format: "\(sec).%02d", arguments: [ms])
+    
 }
