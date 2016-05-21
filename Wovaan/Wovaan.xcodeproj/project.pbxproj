@@ -20,6 +20,8 @@
 		027A4E511CEE8F890030BA0B /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E501CEE8F890030BA0B /* StatsViewController.swift */; };
 		027A4E551CEFABFD0030BA0B /* oslo-ii.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */; };
 		027A4E571CEFBE9A0030BA0B /* monofonto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027A4E561CEFBE9A0030BA0B /* monofonto.ttf */; };
+		027A4E591CEFC90A0030BA0B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E581CEFC90A0030BA0B /* Utilities.swift */; };
+		027A4E5B1CF003D10030BA0B /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A4E5A1CF003D10030BA0B /* RecordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		027A4E501CEE8F890030BA0B /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		027A4E541CEFABFD0030BA0B /* oslo-ii.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "oslo-ii.regular.ttf"; sourceTree = "<group>"; };
 		027A4E561CEFBE9A0030BA0B /* monofonto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = monofonto.ttf; sourceTree = "<group>"; };
+		027A4E581CEFC90A0030BA0B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		027A4E5A1CF003D10030BA0B /* RecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +119,10 @@
 				027A4E501CEE8F890030BA0B /* StatsViewController.swift */,
 				027A4E4A1CEE8A3D0030BA0B /* SettingsViewController.swift */,
 				027A4E1C1CEE2FDC0030BA0B /* Main.storyboard */,
+				027A4E581CEFC90A0030BA0B /* Utilities.swift */,
 				027A4E561CEFBE9A0030BA0B /* monofonto.ttf */,
 				027A4E4E1CEE8DBF0030BA0B /* TimeCell.swift */,
+				027A4E5A1CF003D10030BA0B /* RecordCell.swift */,
 				027A4E1F1CEE2FDC0030BA0B /* Assets.xcassets */,
 				027A4E211CEE2FDC0030BA0B /* LaunchScreen.storyboard */,
 				027A4E241CEE2FDC0030BA0B /* Info.plist */,
@@ -281,6 +287,8 @@
 			files = (
 				027A4E4F1CEE8DBF0030BA0B /* TimeCell.swift in Sources */,
 				027A4E171CEE2FDC0030BA0B /* AppDelegate.swift in Sources */,
+				027A4E5B1CF003D10030BA0B /* RecordCell.swift in Sources */,
+				027A4E591CEFC90A0030BA0B /* Utilities.swift in Sources */,
 				027A4E191CEE2FDC0030BA0B /* TimerViewController.swift in Sources */,
 				027A4E491CEE8A1D0030BA0B /* PastTimesViewController.swift in Sources */,
 				027A4E511CEE8F890030BA0B /* StatsViewController.swift in Sources */,
